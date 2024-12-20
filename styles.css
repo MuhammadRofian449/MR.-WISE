@@ -207,9 +207,10 @@ p {
 
 .team-members {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .member {
@@ -262,6 +263,7 @@ p {
     .team-members {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
     .member {
         margin-bottom: 20px;
@@ -460,4 +462,3 @@ p {
     background-color: #dc3545;
     color: #fff;
 }
-
