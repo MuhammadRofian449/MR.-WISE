@@ -462,3 +462,47 @@ p {
     background-color: #dc3545;
     color: #fff;
 }
+
+/* Styling untuk tombol Login */
+.btn-login {
+    background-color: #ffffff; /* Warna latar belakang putih untuk Login */
+    color: #343a40; /* Warna teks abu-abu gelap */
+    border: 2px solid #343a40; /* Border abu-abu gelap */
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #343a40; /* Ganti warna latar belakang menjadi abu-abu gelap saat hover */
+    color: #ffffff; /* Warna teks putih saat hover */
+}
+
+/* Styling untuk tombol Daftar */
+.btn-daftar {
+    background-color: #ffa500; /* Warna latar belakang oranye untuk Daftar */
+    color: #ffffff; /* Warna teks putih */
+    border: 2px solid #ffa500; /* Border oranye */
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-daftar:hover {
+    background-color: #e67e00; /* Warna latar belakang oranye gelap saat hover */
+    color: #ffffff; /* Warna teks tetap putih saat hover */
+}
+
+/* Responsif: Tombol Login dan Daftar */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-left: 20px;
+    }
+    .navbar .btn {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
