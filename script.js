@@ -1,17 +1,19 @@
-const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        console.log('Tautan diklik:', link.textContent);
-        
-        // Hapus kelas 'active' dari semua menu
-        navLinks.forEach(link => link.classList.remove('active'));
-        
-        // Tambahkan kelas 'active' ke menu yang diklik
-        link.classList.add('active');
-    });
-});
 document.addEventListener('DOMContentLoaded', () => {
+    // Menu Navigasi: Menambahkan kelas 'active' ke menu yang diklik
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            console.log('Tautan diklik:', link.textContent);
+            
+            // Hapus kelas 'active' dari semua menu
+            navLinks.forEach(link => link.classList.remove('active'));
+            
+            // Tambahkan kelas 'active' ke menu yang diklik
+            link.classList.add('active');
+        });
+    });
+
+    // Pencarian Teks
     const searchButton = document.getElementById('search-button');
     const searchInput = document.getElementById('search-input');
     const content = document.getElementById('content');
@@ -72,27 +74,19 @@ document.addEventListener('DOMContentLoaded', () => {
         handleSearch();
     });
 
-    // Event listener untuk tombol "Enter" di input
+    // Event listener untuk tombol "Enter" di input (menggabungkan dua listener sebelumnya)
     searchInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
             e.preventDefault(); // Mencegah reload halaman
             handleSearch();
         }
     });
-});
 
-// Event listener untuk tombol "Enter" di input
-document.getElementById('search-input').addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') {
-        e.preventDefault(); // Mencegah reload halaman
-        document.getElementById('search-button').click();
-    }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
+    // Animasi untuk Kartu Layanan
     const serviceCards = document.querySelectorAll('.service-card');
     serviceCards.forEach((card, index) => {
         card.style.animation = `fadeIn 0.5s ease-in-out ${index * 0.2}s`;
         card.style.animationFillMode = 'forwards';
     });
 });
+

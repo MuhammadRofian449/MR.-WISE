@@ -506,3 +506,63 @@ p {
         text-align: center;
     }
 }
+
+/* Font dan warna dasar */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.navbar {
+    background-color: #f8f9fa; /* Warna terang */
+}
+
+.brand-name {
+    color: #ffc107;
+    font-weight: 600;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.contact-form {
+    background-color: #ffffff; /* Warna putih */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ffc107;
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+}
+
+.btn-contact {
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #ffc107; /* Warna hover */
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+}
