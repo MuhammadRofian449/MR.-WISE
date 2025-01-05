@@ -7,14 +7,12 @@ body {
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.8); /* Warna dasar navbar */
-    backdrop-filter: blur(10px); /*Efek blur untuk transparansi*/
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
     padding: 1rem 2rem;
-    border-radius: 15px; /* Lengkungan di ujung */
-    box-shadow: inset 0 -10px 15px rgba(0, 0, 0, 0.1); /* Bayangan abu-abu di dalam */
-    margin: 25px; /* Jarak dari tepi layar */
-    box-shadow: inset 0 -5px 10px rgba(128, 128, 128, 0.2), 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan luar dan dalam */
-    margin-bottom: 0;
+    border-radius: 15px;
+    box-shadow: inset 0 -5px 10px rgba(128, 128, 128, 0.2), 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 25px;
 }
 
 .navbar-brand {
@@ -61,51 +59,45 @@ body {
 }
 
 footer {
-    background-color: #343a40; /* Warna abu-abu gelap */
-    color: #ffffff; /* Warna teks */
-    padding: 5px 10px; /* Padding atas dan bawah lebih kecil */
-    font-size: 0.9rem; /* Ukuran font */
-    text-align: center; /* Teks rata tengah */
-    line-height: 1.2; /* Jarak antar baris lebih rapat */
-    margin-top: 0; /* Pastikan tidak ada margin tambahan di atas footer */
-    height: auto; /* Pastikan tinggi footer otomatis menyesuaikan dengan kontennya */
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 0;
 }
 
-/* Animasi */
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
 
 .navbar-nav {
-    margin-left: 40px ;
+    margin-left: 40px;
 }
 
-/* Styling untuk daftar isi */
-/* Styling untuk daftar isi */
 .list-group-item {
-    background-color: transparent; /* Membuat item daftar isi transparan */
-    border: none; /* Menghapus border agar lebih clean */
-    padding: 10px 20px; /* Memberikan padding agar lebih nyaman */
-    font-size: 1rem; /* Ukuran font yang pas */
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
 }
 
 .list-group-item a {
     text-decoration: none;
-    color: #007bff; /* Warna biru yang kontras, sesuai dengan tema */
-    font-weight: 600; /* Menambahkan ketebalan font */
-    transition: color 0.3s ease-in-out; /* Efek transisi saat hover */
+    color: #007bff;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
 }
 
 .list-group-item a:hover {
-    color:  gray; /* Warna oranye saat hover */
-    background-color:rgba(255, 165, 0, 0.2); /* Efek latar belakang saat hover */
-    border-radius: 5px; /* Menambahkan border-radius untuk tampilan yang lebih lembut */
+    color: gray;
+    background-color: rgba(255, 165, 0, 0.2);
+    border-radius: 5px;
 }
 
-/* Styling tambahan untuk memastikan daftar isi tidak mengganggu layout */
 .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 20px;
     z-index: 10;
@@ -113,49 +105,41 @@ footer {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.6s ease-out; /* Tambahkan animasi fade-in */
+    animation: fadeIn 0.6s ease-out;
 }
 
 .sticky-top h4 {
-    font-weight: 600; /* Membuat judul daftar isi lebih menonjol */
-    color: #343a40; /* Warna gelap untuk kontras yang baik */
-    font-size: 1.2rem; /* Ukuran font judul */
-    margin-bottom: 15px; /* Memberikan jarak antara judul dan daftar */
+    font-weight: 600;
+    color: #343a40;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
 }
 
-/* Padding untuk kolom kiri */
 .col-lg-8 {
-    padding-right: 30px; /* Memberikan jarak lebih besar di sebelah kanan untuk konten */
+    padding-right: 30px;
 }
 
-/* Styling untuk responsivitas */
 @media (max-width: 768px) {
     .col-lg-4 {
-        margin-top: 30px; /* Memberikan margin atas agar tidak terlalu dekat dengan konten utama */
+        margin-top: 30px;
     }
     .sticky-top {
         position: relative;
-        box-shadow: none; /* Menghilangkan bayangan saat di perangkat mobile */
-        margin-top: 20px; /* Memberikan margin agar tidak terlalu dekat dengan bagian atas layar */
+        box-shadow: none;
+        margin-top: 20px;
     }
 }
 
-/* Keyframe untuk animasi fade-in */
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateX(-20px); }
-    100% { opacity: 1; transform: translateX(0); }
-}
-
 p {
-    font-size: 1.2rem; /* Ukuran font */
-    line-height: 1.6; /* Spasi antar baris */
+    font-size: 1.2rem;
+    line-height: 1.6;
     font-size: 20px;
 }
 
 #search-form {
     display: flex;
     align-items: center;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 #search-input {
@@ -176,7 +160,6 @@ p {
     padding: 2px;
 }
 
-/* Styling untuk section tentang kami */
 .about-section {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -247,7 +230,6 @@ p {
     color: #6c757d;
 }
 
-/* Animasi Fade In */
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(30px); }
     100% { opacity: 1; transform: translateY(0); }
@@ -258,7 +240,6 @@ p {
     100% { opacity: 1; transform: translateX(0); }
 }
 
-/* Styling responsif untuk tampilan mobile */
 @media (max-width: 768px) {
     .team-members {
         flex-direction: column;
@@ -277,11 +258,10 @@ p {
 }
 
 #content, .about-section {
-    margin-top: 0;  /* Menghapus margin atas */
-    padding-top: 0; /* Menghapus padding atas */
+    margin-top: 0;
+    padding-top: 0;
 }
 
-/* Styling untuk kartu layanan */
 .service-card {
     border: none;
     border-radius: 10px;
@@ -297,7 +277,6 @@ p {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Gaya untuk gambar */
 .card-image-container {
     position: relative;
     overflow: hidden;
@@ -313,22 +292,21 @@ p {
 }
 
 .card-image-container .image-default {
-    opacity: 1; /* Gambar awal */
+    opacity: 1;
 }
 
 .card-image-container .image-hover {
-    opacity: 0; /* Gambar hover */
+    opacity: 0;
 }
 
 .card-image-container:hover .image-default {
-    opacity: 0; /* Sembunyikan gambar awal saat hover */
+    opacity: 0;
 }
 
 .card-image-container:hover .image-hover {
-    opacity: 1; /* Tampilkan gambar hover */
+    opacity: 1;
 }
 
-/* Styling untuk teks */
 .card-title {
     font-size: 1.3rem;
     font-weight: bold;
@@ -381,188 +359,17 @@ p {
 }
 
 .btn-contact {
-    background: linear-gradient(135deg, #007bff, #0056b3);
-    color: white;
+    background: linear-gradient(45deg, #f7b731, #f39c12);
     border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    transition: transform 0.3s, background-color 0.3s;
+    border-radius: 50px;
+    padding: 10px 25px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn-contact:hover {
-    transform: scale(1.05);
-    background: linear-gradient(135deg, #0056b3, #007bff);
-}
-
-.section-title {
-    font-size: 2.5rem;
-    color: #343a40;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.contacts {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.contacts a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.contacts a:hover {
+    background: linear-gradient(45deg, #f39c12, #f7b731);
     transform: scale(1.1);
-}
-
-.contacts .btn-outline-success {
-    color: #28a745;
-    border-color: #28a745;
-}
-
-.contacts .btn-outline-success:hover {
-    background-color: #28a745;
-    color: #fff;
-}
-
-.contacts .btn-outline-primary {
-    color: #007bff;
-    border-color: #007bff;
-}
-
-.contacts .btn-outline-primary:hover {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.contacts .btn-outline-danger {
-    color: #dc3545;
-    border-color: #dc3545;
-}
-
-.contacts .btn-outline-danger:hover {
-    background-color: #dc3545;
-    color: #fff;
-}
-
-/* Styling untuk tombol Login */
-.btn-login {
-    background-color: #ffffff; /* Warna latar belakang putih untuk Login */
-    color: #343a40; /* Warna teks abu-abu gelap */
-    border: 2px solid #343a40; /* Border abu-abu gelap */
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.btn-login:hover {
-    background-color: #343a40; /* Ganti warna latar belakang menjadi abu-abu gelap saat hover */
-    color: #ffffff; /* Warna teks putih saat hover */
-}
-
-/* Styling untuk tombol Daftar */
-.btn-daftar {
-    background-color: #ffa500; /* Warna latar belakang oranye untuk Daftar */
-    color: #ffffff; /* Warna teks putih */
-    border: 2px solid #ffa500; /* Border oranye */
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.btn-daftar:hover {
-    background-color: #e67e00; /* Warna latar belakang oranye gelap saat hover */
-    color: #ffffff; /* Warna teks tetap putih saat hover */
-}
-
-/* Responsif: Tombol Login dan Daftar */
-@media (max-width: 768px) {
-    .navbar-nav {
-        margin-left: 20px;
-    }
-    .navbar .btn {
-        margin-top: 10px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-/* Font dan warna dasar */
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-}
-
-.navbar {
-    background-color: #f8f9fa; /* Warna terang */
-}
-
-.brand-name {
-    color: #ffc107;
-    font-weight: 600;
-}
-
-.section-title {
-    font-weight: 600;
-    font-size: 2rem;
-}
-
-.contact-form {
-    background-color: #ffffff; /* Warna putih */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-}
-
-.contact-form label {
-    font-weight: 600;
-    color: #555;
-}
-
-.contact-form input,
-.contact-form textarea {
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    padding: 10px;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #ffc107;
-    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
-}
-
-.btn-contact {
-    font-weight: 600;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn-contact:hover {
-    background-color: #ffc107; /* Warna hover */
-    color: #fff;
-}
-
-/* Footer */
-footer {
-    background-color: #343a40;
 }
